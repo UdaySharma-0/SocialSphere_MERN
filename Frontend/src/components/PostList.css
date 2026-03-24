@@ -1,0 +1,29 @@
+.posts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 10px auto;
+    height: auto;
+    background-color: aqua;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.post {
+    width: 250px;
+    height: 300px;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+}
+.card img{
+    width: 90%;
+    margin: 10px auto;
+    background-color: bisque;
+    border-radius: 20px;
+}

@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+
+html,
+body,
+#root {
+    height: 100%;
+    width: 100%;
+}
+
+input{
+    margin: 5px;
+}
+
+h1{
+    @apply text-3xl font-extrabold text-center
+}
+
+input{
+    @apply bg-amber-50
+}
