@@ -29,6 +29,13 @@ app.post("/create-post", upload.single("image"), async (req, res)=>{
     })
 })
 
+app.get("/", async (req, res) => {
+    return res.status(200).json({
+        status: "ok",
+        message: "Backend API is running",
+    });
+});
+
 app.get("/posts", async (req, res)=>{
 
     const post = await postModel.find();
