@@ -12,7 +12,7 @@ const CreatePost = () => {
     e.preventDefault() // prevents from reloading
     
     const formData = new FormData(e.target)
-    axios.post("http://localhost:3000/create-post", formData)
+    axios.post("/api/create-post", formData)
     .then((res)=>{
       
       navigate("/feed")

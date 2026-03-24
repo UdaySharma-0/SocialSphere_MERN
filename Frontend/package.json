@@ -5,10 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "build": "cd Frontend && npm install && npm run build",
-    "start": "node api/index.js"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.1",

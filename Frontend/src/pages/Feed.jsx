@@ -12,7 +12,7 @@ const Feed = () => {
 
     useEffect(()=>{
 
-        axios.get("http://localhost:3000/posts")
+        axios.get("/api/posts")
         .then((res)=>{
             console.log(res.data.post);
             setPosts(res.data.post)
@@ -27,7 +27,7 @@ const Feed = () => {
             fileId: image
         })
 
-        axios.delete(`http://localhost:3000/posts/?${param.toString()}`)
+        axios.delete(`/api/posts/?${param.toString()}`)
         .then((res) =>{
             console.log(res.data);
             setPosts(posts.filter(post => post._id !== id));
